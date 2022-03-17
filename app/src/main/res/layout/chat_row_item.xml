@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="chatdata"
+            type="com.example.assignmenttops.viewpager_assignment.ChatData" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:padding="20dp"
+        app:cardBackgroundColor="#838AFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChatName"
+                android:textSize="20dp"
+                android:text="@{chatdata.name}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChat"
+                android:textSize="15dp"
+                android:text="@{chatdata.chat}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChatTime"
+                android:textSize="15dp"
+                android:text="@{chatdata.date}"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

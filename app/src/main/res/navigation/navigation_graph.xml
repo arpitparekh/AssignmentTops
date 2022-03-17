@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/dataListFragment">
+
+    <fragment
+        android:id="@+id/dataListFragment"
+        android:name="com.example.assignmenttops.sqllite_crud_operations_new.DataListFragment"
+        android:label="fragment_data_list"
+        tools:layout="@layout/fragment_data_list" >
+        <action
+            android:id="@+id/action_dataListFragment_to_newDataFragment"
+            app:destination="@id/newDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newDataFragment"
+        android:name="com.example.assignmenttops.sqllite_crud_operations_new.NewDataFragment"
+        android:label="fragment_new_data"
+        tools:layout="@layout/fragment_new_data" />
+</navigation>

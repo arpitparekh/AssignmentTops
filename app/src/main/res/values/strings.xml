@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AssignmentTops</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="linear">LinearLayout</string>
+
+    <string-array name="Cities">
+        <item>Anand</item>
+        <item>Surat</item>
+        <item>junagadh</item>
+        <item>Ahmedabad</item>
+    </string-array>
+
+    <string-array name="Computer">
+        <item>RAM</item>
+        <item>HardDisk</item>
+        <item>Fan</item>
+        <item>SMPS</item>
+        <item>Display</item>
+    </string-array>
+
+    <string-array name="names">
+        <item>Arpit</item>
+        <item>Krupal</item>
+        <item>Paresh</item>
+        <item>Mahesh</item>
+        <item>Dhruv</item>
+        <item>Ankit Sir</item>
+        <item>Modi</item>
+
+        <item>Butter</item>
+        <item>Peanut</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

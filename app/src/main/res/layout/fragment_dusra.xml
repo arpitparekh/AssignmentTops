@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="cars"
+            type="com.example.assignmenttops.passobject.Cars" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".passobject.DusraFragment"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcarNAme"
+            android:textSize="20dp"
+            android:text="@{cars.name}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCarServiceNumber"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:text="@{String.valueOf(cars.serviceNumber)}"/>
+
+    </LinearLayout>
+</layout>

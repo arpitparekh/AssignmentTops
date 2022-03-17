@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".other_stuff.ListOfbuttonsFragment"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#848BFF"
+    android:scrollbars="horizontal"
+    android:scrollbarStyle="outsideOverlay">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerviewinbuttons"
+        android:scrollbars="vertical"
+        />
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

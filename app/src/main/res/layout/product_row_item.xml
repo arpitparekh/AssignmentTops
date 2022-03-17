@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="product"
+            type="com.example.assignmenttops.recyclerview.Product" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#757DFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameProduct"
+                android:textSize="20dp"
+                android:text="@{`Name is : `+product.name}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PriceProduct"
+                android:textSize="10dp"
+                android:text="@{`Price is : `+String.valueOf(product.price)}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantityProduct"
+                android:textSize="10dp"
+                android:text="@{`Quantity is : `+String.valueOf(product.quantity)}"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
